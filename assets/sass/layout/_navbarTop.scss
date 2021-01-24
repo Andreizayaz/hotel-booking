@@ -1,0 +1,40 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.navbarTop{ 
+ width:100%;
+ background: $background-gray;
+}
+
+.navbarTop-content{
+  @include flex-row-wrap;
+  width:100%;
+}
+
+.question-phone{
+  margin-right: auto;
+  padding:24px 0;
+  color:$gray-text;  
+}
+
+strong{
+  font-weight: bold;
+}
+
+.gift-and-loyalty-section{
+  @include flex-row-wrap;
+  padding:25px 5px 17px 0;
+}
+
+.gift, .loyalty{
+  @include flex-align-items-center;
+
+  img{
+    display:block;
+    margin-right: 20px;
+  }
+}
+
+.gift{
+  margin-right: 98px;
+}

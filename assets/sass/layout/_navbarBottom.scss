@@ -1,0 +1,15 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.navbarBottom{
+  background-color: $bacgkround-navbar-bottom;
+}
+
+.navigation{
+@include flex-row-wrap-space-between-align-center;
+padding:31px 0;
+}
+
+.nav-item{
+  width:fit-content;
+}
