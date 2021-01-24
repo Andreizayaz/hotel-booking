@@ -107,6 +107,10 @@ a {
   text-decoration: none;
 }
 
+.active-item {
+  font-weight: bold;
+}
+
 .small-text {
   font-size: 10px;
   line-height: 13px;
@@ -119,6 +123,7 @@ a {
 
 .link {
   font-size: 14px;
+  font-weight: bold;
   line-height: 18px;
 }
 
@@ -252,9 +257,6 @@ a {
   font-style: normal;
 }
 
-/*@mixin block-model($display:block, $width:fit-content, $margin) {
-  display:
-}*/
 .navbarTop {
   width: 100%;
   background: #F5FAFE;
@@ -487,9 +489,6 @@ strong {
   font-style: normal;
 }
 
-/*@mixin block-model($display:block, $width:fit-content, $margin) {
-  display:
-}*/
 .navbarBottom {
   background-color: #0A223D;
 }
@@ -515,5 +514,95 @@ strong {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Bold.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Regular.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arial-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arialbd-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arialbd-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.breadcrumbs {
+  background-color: #F5FAFE;
+}
+
+.breadcrumbs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 18px 0;
+}
+
+.breadcrumb-item {
+  padding: 0 5px;
+  color: #333;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+
+.breadcrumb-item:first-child {
+  padding-left: 0;
+}
+
+.breadcrumb-item:nth-child(2) {
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+}
+
+.breadcrumb-item:last-child {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.breadcrumb-item a {
+  display: block;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
 }
 /*# sourceMappingURL=main.css.map */

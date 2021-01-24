@@ -21,6 +21,9 @@
   justify-content: space-between;
 }
 
-/*@mixin block-model($display:block, $width:fit-content, $margin) {
-  display:
-}*/
+@mixin flex-row-wrap-start-align-center {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}

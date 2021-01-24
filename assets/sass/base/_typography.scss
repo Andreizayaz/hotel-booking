@@ -11,6 +11,10 @@ a{
   text-decoration: none;
 }
 
+.active-item{
+  font-weight: bold;
+}
+
 .small-text{
   font-size: 10px;
   line-height: 13px;
@@ -23,6 +27,7 @@ a{
 
 .link {
   font-size: 14px;
+  font-weight: bold;
   line-height: 18px;
 }
 
