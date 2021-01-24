@@ -38,3 +38,13 @@ q {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+  input, button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+*{
+  box-sizing: border-box;
+}

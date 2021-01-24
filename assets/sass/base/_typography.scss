@@ -1,0 +1,46 @@
+@import "../utils/variables";
+
+body{
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a{
+  color:$gray-text;
+  text-decoration: none;
+}
+
+.small-text{
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.input-field-text {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.link {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.light-text{
+  color:$light-link-text;
+}
+
+.upper-text{
+  text-transform: uppercase;
+}
+
+.visuallyhidden{
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}

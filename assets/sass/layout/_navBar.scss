@@ -1,0 +1,64 @@
+@import "../utils/variables";
+
+.navbar {
+  background-color: $background-navbar;
+}
+
+.navbar-content {
+  @include flex-row-wrap;
+  align-items: center;
+  padding: 37px 0;
+  width: 100%;
+}
+
+.logo{
+  margin-right:108px;
+}
+.search-form{
+  margin-right:auto;
+}
+.shopping-cart {
+  margin-right: auto;
+}
+
+.user-menu-section{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width:21%;
+}
+
+.shopping-cart{
+  position: relative;
+}
+
+.top-location{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.circle{
+  border-radius:50%;
+}
+
+.count-purchases{  
+  @include flex-center-middle;
+  width:20px;
+  height:20px;
+  background-color: $background-form-button;
+  color:#FFF;
+}
+
+.user-dropdown-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:64%;
+}
+
+.name{
+  color:$gray-text;
+  font-size: 14px;
+  line-height: 18px;
+}

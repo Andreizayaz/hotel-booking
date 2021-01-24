@@ -1,0 +1,26 @@
+@mixin flex-align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-row-wrap {
+  display: flex;
+  flex-flow:row wrap;
+}
+
+@mixin flex-row-wrap-space-between-align-center {
+  display: flex;
+  flex-flow: row wrap;
+  align-items:center;
+  justify-content: space-between;
+}
+
+/*@mixin block-model($display:block, $width:fit-content, $margin) {
+  display:
+}*/
