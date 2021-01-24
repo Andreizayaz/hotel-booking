@@ -15,9 +15,17 @@ a{
   font-weight: bold;
 }
 
-.small-text{
-  font-size: 10px;
-  line-height: 13px;
+.extra-small-text{
+  font-size: 8px;
+  line-height: 10px
+}
+
+.header-of-section{
+  color:$gray-text;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase
 }
 
 .input-field-text {
@@ -33,6 +41,11 @@ a{
 
 .light-text{
   color:$light-link-text;
+}
+
+.small-text {
+  font-size: 10px;
+  line-height: 13px;
 }
 
 .upper-text{

@@ -111,9 +111,17 @@ a {
   font-weight: bold;
 }
 
-.small-text {
-  font-size: 10px;
-  line-height: 13px;
+.extra-small-text {
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.header-of-section {
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .input-field-text {
@@ -129,6 +137,11 @@ a {
 
 .light-text {
   color: #FFF;
+}
+
+.small-text {
+  font-size: 10px;
+  line-height: 13px;
 }
 
 .upper-text {
@@ -208,11 +221,65 @@ a {
   font-style: normal;
 }
 
+button {
+  cursor: pointer;
+}
+
 .button-submit {
   margin-left: -65px;
   padding: 9px 22px;
   background-color: #EC1F46;
   border-radius: 0px 6px 6px 0px;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Bold.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Regular.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arial-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arialbd-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arialbd-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.label {
+  padding: 3px 9px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #EC1F46;
+  border-radius: 3px;
 }
 
 @font-face {
@@ -507,13 +574,18 @@ strong {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 31px 0;
 }
 
 .nav-item {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding: 31px 0;
+  margin-right: 83px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
 }
 
 @font-face {
@@ -604,5 +676,70 @@ strong {
   display: block;
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
+}
+
+.hotel-name-and-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 23px 0 26px;
+}
+
+.stars-hotel-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 14%;
+  margin-right: auto;
+  margin-bottom: 4px;
+}
+
+.header-and-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-section {
+  margin-right: 14px;
+}
+
+.user-rating {
+  padding: 8px;
+  color: #FFF;
+  text-align: center;
+  background: #EC1F46;
+  border-radius: 4px;
+}
+
+.rate-header {
+  margin-bottom: 2px;
 }
 /*# sourceMappingURL=main.css.map */

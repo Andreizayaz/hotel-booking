@@ -7,9 +7,14 @@
 
 .navigation{
 @include flex-row-wrap-space-between-align-center;
-padding:31px 0;
 }
 
 .nav-item{
   width:fit-content;
+  padding:31px 0;
+  margin-right:83px;
+
+  &:last-child{
+    margin-right:0;
+  }
 }

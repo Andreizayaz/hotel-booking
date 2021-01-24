@@ -1,0 +1,9 @@
+@import "../utils/variables";
+
+.label{
+  padding:3px 9px;
+  color:#FFF;
+  font-weight: bold;
+  background-color: $background-form-button;
+  border-radius: 3px;
+}
