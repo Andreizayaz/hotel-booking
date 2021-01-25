@@ -40,6 +40,8 @@
 .image-and-slider {
   @include flex-center-middle;
   width: 66%;
+  height:454px;
+  overflow: hidden;
   background: url(../assets/img/02_HotelInfoSlider/01_SliderImage.png), linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   background-blend-mode: overlay;
   background-size: cover;
@@ -57,6 +59,7 @@
 
 .booking-and-map {
   @include flex-column;
+  width:31.5%;
 }
 
 .booking-info {
