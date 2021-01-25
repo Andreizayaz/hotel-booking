@@ -129,6 +129,11 @@ a {
   line-height: 15px;
 }
 
+.label-font {
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .link {
   font-size: 14px;
   font-weight: bold;
@@ -225,6 +230,17 @@ button {
   cursor: pointer;
 }
 
+.button-primary {
+  padding: 13px 0;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #EC1F46;
+}
+
 .button-submit {
   margin-left: -65px;
   padding: 9px 22px;
@@ -280,6 +296,17 @@ button {
   font-weight: bold;
   background-color: #EC1F46;
   border-radius: 3px;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 16px;
 }
 
 @font-face {
@@ -678,6 +705,48 @@ strong {
           transform: skew(20deg);
 }
 
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Bold.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Regular.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arial-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arialbd-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arialbd-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 .hotel-name-and-rate {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,5 +810,194 @@ strong {
 
 .rate-header {
   margin-bottom: 2px;
+}
+
+.slider-booking-and-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.image-and-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 66%;
+  background: url(../assets/img/02_HotelInfoSlider/01_SliderImage.png), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: url(../assets/img/02_HotelInfoSlider/01_SliderImage.png), linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.slider .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6px 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.booking-and-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 29px 29px 26px 26px;
+  margin-bottom: 27px;
+  color: #FFF;
+  font-family: Nunito, Arial, sans-serif;
+  background: #0A223D;
+  border-radius: 8px;
+}
+
+.price-and-person-room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.price-block,
+.person-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price-block {
+  text-align: left;
+}
+
+.price-header {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.price-for {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.person-section {
+  width: 28%;
+  text-align: left;
+}
+
+.user,
+.room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.user {
+  margin-bottom: 8px;
+}
+
+.call-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 17px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.phone-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 28%;
+  text-align: right;
+}
+
+.text-phone-number {
+  color: #FFF;
+}
+
+.map {
+  border-radius: 10px;
+}
+
+.map iframe {
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,4 @@
+@import "../utils/variables";
 @import "../utils/mixins";
 
 .hotel-name-and-rate {
@@ -31,4 +32,112 @@
 
 .rate-header{
   margin-bottom: 2px;
+}
+.slider-booking-and-map {
+  @include flex-row-wrap-space-between;
+}
+
+.image-and-slider {
+  @include flex-center-middle;
+  width: 66%;
+  background: url(../assets/img/02_HotelInfoSlider/01_SliderImage.png), linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.slider {
+  .btn {
+    @include flex-center-middle;
+    padding: 6px 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+  }
+}
+
+.booking-and-map {
+  @include flex-column;
+}
+
+.booking-info {
+  @include flex-column;
+  padding: 29px 29px 26px 26px;
+  margin-bottom: 27px;
+  color: #FFF;
+  font-family: $nunito-font;
+  background: #0A223D;
+  border-radius: 8px;
+}
+
+.price-and-person-room {
+  @include flex-row-wrap-space-between;
+  margin-bottom: 9px;
+}
+
+.price-block,
+.person-section {
+  @include flex-column;
+}
+
+.price-block {
+  text-align: left;
+}
+
+.price-header {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.price-for {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.person-section {
+  width: 28%;
+  text-align: left;
+}
+
+.user,
+.room {
+  @include flex-row-wrap-space-between;
+  align-items: flex-start;
+}
+
+.user {
+  margin-bottom: 8px;
+}
+
+.call-center {
+  @include flex-row-wrap-space-between;
+  margin-bottom: 17px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.phone-number {
+  @include flex-row-wrap-space-between;
+  width: 28%;
+  text-align: right;
+}
+
+.text-phone-number {
+  color: #FFF;
+}
+
+.map {
+  border-radius: 10px;
+
+  iframe {
+    border-radius: 10px;
+  }
 }

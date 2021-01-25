@@ -4,6 +4,17 @@ button{
   cursor:pointer;
 }
 
+.button-primary{
+  padding:13px 0;
+  color:#FFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: $background-form-button;
+}
+
 .button-submit{
   margin-left:-65px;
   padding: 9px 22px;
