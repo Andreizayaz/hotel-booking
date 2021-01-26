@@ -98,6 +98,7 @@ input, button {
 
 body {
   font-family: Mulish, Arial, sans-serif;
+  font-size: 0;
   font-style: normal;
   font-weight: normal;
 }
@@ -1160,6 +1161,7 @@ strong {
 }
 
 .text {
+  height: 80%;
   color: #333;
   font-size: 12px;
   line-height: 15px;
@@ -1236,7 +1238,7 @@ strong {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 38px 85px 57px 24px;
+  padding: 38px 85px 36px 24px;
   border-radius: 8px;
 }
 
@@ -1262,5 +1264,230 @@ strong {
 .list-details-colummn .list-details-item {
   width: 100%;
   margin-right: 0;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Bold.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Regular.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arial-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arialbd-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arialbd-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.other-packages-content {
+  padding: 40px 0 70px;
+}
+
+.main-header {
+  margin-bottom: 65px;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.packages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.package-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 31.5%;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.package-list-item:nth-child(-n+2) {
+  margin-bottom: 30px;
+}
+
+.package-list-item .image-and-offer {
+  position: relative;
+}
+
+.package-list-item .information-block {
+  border-radius: 0 0 8px 8px;
+}
+
+.package-list-item .common-section {
+  margin-bottom: 20px;
+}
+
+.prime-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 66%;
+}
+
+.prime-item .image-and-offer {
+  position: relative;
+  width: 50%;
+}
+
+.prime-item .label {
+  padding: 8px 12px;
+  border-radius: 0 8px 8px 0;
+}
+
+.prime-item .information-block {
+  padding: 46px 21px 30px 43px;
+  width: 50%;
+  border-radius: 0 8px 8px 0;
+}
+
+.responsive {
+  max-width: 100%;
+}
+
+.label-absolute {
+  position: absolute;
+  top: 26px;
+  left: 0;
+}
+
+.information-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px 21px 25px 32px;
+  color: #FFF;
+  border-radius: 0 8px 8px 0;
+  background-color: #0A223D;
+}
+
+.information-block .hotel-rate-and-offer {
+  margin-bottom: 27px;
+}
+
+.header-of-packages-list-item {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.information-content {
+  text-align: left;
+}
+
+.text-content {
+  margin-bottom: 45px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.user-section {
+  margin-bottom: 37px;
+  width: 100%;
+}
+
+.info-for-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 11px;
+}
+
+.info-for-user:last-child {
+  margin-bottom: 0;
+}
+
+.info-for-user img {
+  margin-right: 14px;
+}
+
+.prise-and-book {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prise-and-book .button-primary {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 11px 26px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.stroke-prise {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
 }
 /*# sourceMappingURL=main.css.map */

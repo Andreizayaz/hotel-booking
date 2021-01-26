@@ -1,0 +1,138 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.other-packages-content {
+  padding: 40px 0 70px;
+}
+
+.main-header {
+  margin-bottom: 65px;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.packages-list {
+  @include flex-row-wrap-space-between;
+}
+
+.package-list-item {
+  @include flex-column;
+  width:31.5%;
+  border-radius: 8px 8px 8px 8px;
+
+  &:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+
+  .image-and-offer {
+    position: relative;
+  }
+
+  .information-block {
+    border-radius:0 0 8px 8px;
+  }
+
+  .common-section{
+    margin-bottom: 20px;
+  }
+}
+
+.prime-item {
+  @include flex-row-wrap;
+  width: 66%;
+
+  .image-and-offer {
+    position: relative;
+    width: 50%;
+  }
+
+  .label {
+    padding: 8px 12px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .information-block {
+    padding: 46px 21px 30px 43px;
+    width: 50%;
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+.responsive {
+  max-width: 100%;
+}
+
+.label-absolute {
+  position: absolute;
+  top: 26px;
+  left: 0;
+}
+
+.information-block {
+  @include flex-column;
+  height:fit-content;
+  padding: 30px 21px 25px 32px;
+  color: #FFF;
+  border-radius: 0 8px 8px 0;
+  background-color: $bacgkround-navbar-bottom;
+
+  .hotel-rate-and-offer {
+    margin-bottom: 27px;
+  }
+}
+
+.header-of-packages-list-item {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.information-content {
+  text-align: left;
+}
+
+.text-content {
+  margin-bottom: 45px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.user-section {
+  margin-bottom: 37px;
+  width: 100%;
+}
+
+.info-for-user {
+  @include flex-row-wrap;
+  margin-bottom: 11px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-right: 14px;
+  }
+}
+
+.prise-and-book {
+  position:relative;
+  @include flex-row-wrap-space-between;
+
+  .button-primary {
+    position: absolute;
+    right:0;
+    bottom:0;
+    padding: 11px 26px;
+    height:fit-content;
+  }
+}
+
+.stroke-prise {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+}
