@@ -167,8 +167,8 @@ a {
 }
 
 .container {
-  max-width: 1110px;
-  width: 80%;
+  width: 1110px;
+  max-width: 95%;
   margin: 0 auto;
 }
 
@@ -1489,5 +1489,120 @@ strong {
   line-height: 18px;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Bold.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Regular.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arial-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arialbd-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arialbd-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.guest-review {
+  padding: 40px 18px 70px;
+}
+
+.guest-review .main-header {
+  margin-bottom: 117px;
+}
+
+.guest-review-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 68%;
+  margin: 0 auto;
+  padding: 0 95px 30px 99px;
+  text-align: center;
+  background: #FFF;
+  border-radius: 8px;
+}
+
+.user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.image-container-user {
+  margin-top: -50%;
+  margin-bottom: 9px;
+}
+
+.small-header {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+}
+
+.date-visit {
+  margin-bottom: 4px;
+}
+
+.stars-for-review {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.guest-review-text {
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+}
+
+.slider-for-review {
+  -webkit-transform: translateY(-271px);
+          transform: translateY(-271px);
 }
 /*# sourceMappingURL=main.css.map */

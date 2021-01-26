@@ -1,0 +1,59 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.guest-review {
+  padding: 40px 18px 70px;
+
+  .main-header{
+    margin-bottom: 117px;
+  }
+}
+
+.guest-review-content{
+  @include flex-column;
+  width:68%;
+  margin: 0 auto;
+  padding:0 95px 30px 99px;
+  text-align: center;
+  background: #FFF;
+  border-radius: 8px;
+}
+
+.user-profile{
+  @include flex-column;
+  width:fit-content;
+  margin: auto;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.image-container-user{
+  margin-top: -50%;
+  margin-bottom: 9px;
+}
+
+.small-header{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+}
+
+.date-visit{
+  margin-bottom: 4px;
+}
+
+.stars-for-review{
+  width:50%;
+  margin: 0 auto;
+}
+
+.guest-review-text{
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+}
+.slider-for-review{
+  transform: translateY(-271px);
+}
