@@ -181,7 +181,8 @@ a {
 .input-text {
   max-width: 350px;
   min-width: 350px;
-  padding: 12px 23px;
+  padding: 14px 23px;
+  font-size: 14px;
   background-color: #F5FAFE;
   border-radius: 6px;
 }
@@ -1533,6 +1534,11 @@ strong {
   font-style: normal;
 }
 
+.guest-review-section-overlay {
+  position: relative;
+  width: 100%;
+}
+
 .guest-review {
   padding: 40px 18px 70px;
 }
@@ -1602,7 +1608,120 @@ strong {
 }
 
 .slider-for-review {
-  -webkit-transform: translateY(-271px);
-          transform: translateY(-271px);
+  position: absolute;
+  right: 0;
+  bottom: 225px;
+}
+
+.slider-for-review .border-none {
+  border: none;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Bold.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Regular.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arial-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arialbd-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arialbd-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.subscribe-section {
+  background: url("../assets/img/05_SubscribeSection/01_Photo.png"), #C4C4C4;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subscribe-section-overlay {
+  background: rgba(10, 34, 61, 0.8);
+}
+
+.subscribe-section-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 98px 0 87px;
+  width: 66%;
+  margin: 0 auto;
+}
+
+.subscribe-section-content .search-form {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 7px 0;
+}
+
+.subscribe-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #FFF;
+  text-align: left;
+}
+
+.small-subscribe-text {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.subscribe-text span.main-header {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.subscribe-button-text {
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFF;
 }
 /*# sourceMappingURL=main.css.map */

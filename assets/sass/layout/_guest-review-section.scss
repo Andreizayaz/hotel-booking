@@ -1,6 +1,11 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
+.guest-review-section-overlay{
+  position: relative;
+  width:100%;
+}
+
 .guest-review {
   padding: 40px 18px 70px;
 
@@ -55,5 +60,12 @@
   text-align: justify;
 }
 .slider-for-review{
-  transform: translateY(-271px);
+  position: absolute;
+  right:0;
+  bottom: 225px;
+
+  .border-none {
+    border: none;
+  }
 }
+
