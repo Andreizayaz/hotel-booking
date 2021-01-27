@@ -1,0 +1,61 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.footer-top{
+  @include flex-row-wrap-space-between;
+  margin-bottom: 89px;
+}
+
+.footer-logo{
+  width:14%;
+  padding-top:31px;
+  margin-right:127px;
+}
+
+.information-section{
+  text-align: left;
+  max-width: 27%;
+
+  &:nth-child(2){
+    width:14%;
+  }
+
+  &:nth-child(3) {
+    width: 26%;
+    margin: 0 52px 0 129px;
+  }
+
+  &:nth-child(4) {
+    width: 18%;
+  }
+}
+
+.information-header-block{
+  margin-bottom: 17px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.social-network{
+  @include flex-row-wrap-space-between;
+  margin-top: 23px;
+}
+
+.header-social{
+  width:60%;
+  margin: 0;
+}
+
+.social-network-list{
+  @include flex-row-wrap-space-between;
+  width:27%;
+}
+
+.social-network-item{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
