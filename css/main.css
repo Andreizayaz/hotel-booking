@@ -43,7 +43,7 @@ table {
   border-spacing: 0;
 }
 
-input, button {
+input, button, textarea {
   background-color: transparent;
   border: none;
   outline: none;
