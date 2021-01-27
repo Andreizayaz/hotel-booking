@@ -1918,7 +1918,7 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 89px;
+  margin-bottom: 84px;
 }
 
 .footer-logo {
@@ -1997,5 +1997,184 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Bold.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url("../assets/fonts/Mulish/Mulish-Regular.woff2") format("woff2"), url("../assets/fonts/Mulish/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../assets/fonts/Nunito/nunito-regular-webfont.woff2") format("woff2"), url("../assets/fonts/Nunito/nunito-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arial-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../assets/fonts/Arial/arialbd-webfont.woff2") format("woff2"), url("../assets/fonts/Arial/arialbd-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 95px;
+}
+
+.contact-details {
+  width: 47%;
+  padding-top: 11px;
+}
+
+.contact-details .information-header-block {
+  margin-bottom: 27px;
+}
+
+.contact-detail-text {
+  margin-bottom: 22px;
+}
+
+.contact-items-list {
+  width: 100%;
+}
+
+.contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  width: 5%;
+}
+
+.address, .phone-list {
+  display: block;
+  width: 92%;
+  text-align: left;
+}
+
+.phone-list .phone-number {
+  width: 100%;
+  text-align: left;
+}
+
+.contact-form {
+  width: 48.5%;
+}
+
+.contact-form .information-header-block {
+  margin-bottom: 34px;
+}
+
+.contact-form .name-and-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.contact-form .name-and-number .search-input {
+  width: 47%;
+}
+
+.contact-form .name-and-number .input-text {
+  min-width: 0;
+}
+
+.textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 18px 23px;
+  margin-bottom: 23px;
+}
+
+.submit-and-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.submit-and-note .submit {
+  width: 10%;
+  min-width: 160px;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background: #EC1F46;
+  border-radius: 4px;
+}
+
+.submit-and-note .required-fields {
+  width: 18%;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
 }
 /*# sourceMappingURL=main.css.map */
