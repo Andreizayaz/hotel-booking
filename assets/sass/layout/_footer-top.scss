@@ -10,6 +10,10 @@
   width:14%;
   padding-top:31px;
   margin-right:127px;
+
+  @media(max-width:1149px) {
+    margin-right: 25px;
+  }
 }
 
 .information-section{
@@ -23,6 +27,10 @@
   &:nth-child(3) {
     width: 26%;
     margin: 0 52px 0 129px;
+
+    @media(max-width:1149px) {
+      margin: 0;
+    }
   }
 
   &:nth-child(4) {

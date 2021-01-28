@@ -45,6 +45,9 @@
   .image-and-offer {
     position: relative;
     width: 50%;
+    height:100%;
+    background-image: url("../assets/img/03_OtherPackages/01_Photo.png");
+    border-bottom-left-radius: 8px;
   }
 
   .label {
@@ -55,7 +58,15 @@
   .information-block {
     padding: 46px 21px 30px 43px;
     width: 50%;
+    height:100%;
     border-radius: 0 8px 8px 0;
+@media(max-width:1149px) {
+  padding: 19px 21px 30px 24px;
+
+  .stars-hotel-rate {
+    width: 20%;
+  }
+}
   }
 }
 

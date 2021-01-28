@@ -47,6 +47,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 8px;
+
+  @media(max-width:1024px) {
+    width:52%;
+  }
 }
 
 .slider {
@@ -60,6 +64,10 @@
 .booking-and-map {
   @include flex-column;
   width:31.5%;
+
+  @media(max-width:1024px) {
+    width:45%;
+  }
 }
 
 .booking-info {

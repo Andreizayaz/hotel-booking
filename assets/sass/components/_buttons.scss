@@ -21,3 +21,21 @@ button{
   background-color: $background-form-button;
   border-radius: 0px 6px 6px 0px;
 }
+
+.btn-burger-side-menu{
+  display:none;
+  width:100px;
+  padding:10px;
+  margin-bottom: 15px;
+  font-family: $base-font;
+  font-size: 16px;
+  color:#FFF;
+  text-align:center;
+  border-radius:8px;
+  background-color:$bacgkround-navbar-bottom;
+  opacity:.8;
+
+  @media(max-width:900px) {
+    display:block;
+  }
+}

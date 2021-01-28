@@ -17,4 +17,8 @@
   &:last-child{
     margin-right:0;
   }
+
+   @media(max-width:1149px){
+        margin-right:0;
+    }
 }
