@@ -4,6 +4,10 @@
 .footer-top{
   @include flex-row-wrap-space-between;
   margin-bottom: 84px;
+
+  @media(max-width:1024px) {
+    padding: 0 10px;
+  }
 }
 
 .footer-logo{
@@ -55,11 +59,19 @@
 .header-social{
   width:60%;
   margin: 0;
+
+  @media(max-width:1024px) {
+    width:50%;
+  }
 }
 
 .social-network-list{
   @include flex-row-wrap-space-between;
   width:27%;
+
+  @media(max-width:1024px) {
+    width: 35%;
+  }
 }
 
 .social-network-item{

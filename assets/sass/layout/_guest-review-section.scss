@@ -9,6 +9,10 @@
 .guest-review {
   padding: 40px 18px 70px;
 
+  @media(max-width:1024px) {
+    padding-top: 25px;
+  }
+
   .main-header{
     margin-bottom: 117px;
   }
@@ -22,6 +26,11 @@
   text-align: center;
   background: #FFF;
   border-radius: 8px;
+
+  @media(max-width:1024px) {
+    width:80%;
+    padding:0 15px 15px 15px;
+  }
 }
 
 .user-profile{

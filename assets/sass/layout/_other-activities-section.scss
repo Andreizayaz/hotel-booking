@@ -25,6 +25,11 @@
   border-radius: 6px;
   background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
   background-blend-mode: overlay;
+
+   @media(max-width:1024px) {
+     padding-top:160px;
+   }
+
 }
 
 .header-and-book{
@@ -53,6 +58,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
+
+  @media(max-width:1024px) {
+    width: 24%;
+    min-height: 275px;
+    height: 100%;
+  }
 
   &:nth-child(2){
     background: url(../assets/img/06_OtherActivities/02_Photo.png);

@@ -20,6 +20,11 @@
   width: 66%;
   margin: 0 auto;
 
+  @media(max-width:1024px) {
+    width: 80%;
+    padding: 45px 10px;
+  }
+
   .search-form{
     height:fit-content;
     margin: 0;

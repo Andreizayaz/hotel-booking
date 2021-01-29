@@ -3,6 +3,10 @@
 
 .other-packages-content {
   padding: 40px 0 70px;
+
+   @media(max-width:1024px) {
+     padding-bottom: 45px;
+   }
 }
 
 .main-header {
@@ -20,6 +24,10 @@
   @include flex-column;
   width:31.5%;
   border-radius: 8px 8px 8px 8px;
+
+  @media(max-width:1024px) {
+    width: 49%;
+  }
 
   &:nth-child(-n+2) {
     margin-bottom: 30px;
@@ -42,11 +50,17 @@
   @include flex-row-wrap;
   width: 66%;
 
+  @media(max-width:1024px) {
+    width:100%;
+  }
+
   .image-and-offer {
     position: relative;
     width: 50%;
     height:100%;
     background-image: url("../assets/img/03_OtherPackages/01_Photo.png");
+    background-size:cover;
+    background-repeat: no-repeat;
     border-bottom-left-radius: 8px;
   }
 
@@ -78,6 +92,14 @@
   position: absolute;
   top: 26px;
   left: 0;
+}
+
+.image-container{
+  img{
+     @media(max-width:1024px) {
+       width: 100%;
+     }
+  }
 }
 
 .information-block {

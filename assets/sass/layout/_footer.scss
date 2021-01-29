@@ -15,4 +15,8 @@ footer{
 
 .footer-content{
   padding:108px 0 46px;
+
+  @media(max-width:1024px) {
+    padding-top: 50px;
+  }
 }

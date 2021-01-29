@@ -46,6 +46,10 @@
   .phone-number{
     width:100%;
     text-align:left;
+
+    @media(max-width:1024px) {
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -91,6 +95,11 @@
     color: #FFFFFF;
     background: #EC1F46;
     border-radius: 4px;
+
+    @media(max-width:1024px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   .required-fields{

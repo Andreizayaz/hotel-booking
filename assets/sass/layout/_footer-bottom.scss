@@ -5,6 +5,10 @@
   @include flex-row-wrap-space-between;
   width:62.7%;
   margin-left:auto;
+
+  @media(max-width:1149px) {
+    width:100%;
+  }
 }
 
 .info-list{
