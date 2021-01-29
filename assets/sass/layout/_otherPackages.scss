@@ -78,6 +78,7 @@
   padding: 19px 21px 30px 24px;
 
   .stars-hotel-rate {
+    min-width: 50px;
     width: 20%;
   }
 }
@@ -154,12 +155,20 @@
   position:relative;
   @include flex-row-wrap-space-between;
 
+  @media(max-width:768px) {
+       flex-direction: column;
+     }
+
   .button-primary {
     position: absolute;
     right:0;
     bottom:0;
     padding: 11px 26px;
     height:fit-content;
+
+    @media(max-width:768px) {
+       position:static;
+     }
   }
 }
 

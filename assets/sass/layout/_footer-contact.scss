@@ -4,11 +4,20 @@
 .footer-contact{
   @include flex-row-wrap-space-between;
   margin-bottom: 95px;
+
+  @media(max-width:768px) {
+    margin-bottom: 45px;
+  }
 }
 
 .contact-details{
   width:47%;
   padding-top: 11px;
+
+  @media(max-width:768px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
   .information-header-block{
     margin-bottom: 27px;
@@ -55,6 +64,10 @@
 
 .contact-form{
   width:48.5%;
+
+@media(max-width:768px) {
+  width: 100%;
+}
 
   .information-header-block{
     margin-bottom: 34px;
@@ -110,7 +123,7 @@
     color: #E0E0E0;
 
     @media(max-width:1149px) {
-      width:24%;
+      width:31%;
     }
   }
 }

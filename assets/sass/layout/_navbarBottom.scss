@@ -7,6 +7,10 @@
 
 .navigation{
 @include flex-row-wrap-space-between-align-center;
+@media(max-width:768px) {
+  display:none;
+  flex-direction: column;
+  }
 }
 
 .nav-item{
@@ -21,4 +25,14 @@
    @media(max-width:1149px){
         margin-right:0;
     }
+@media(max-width:768px) {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+
+  a {
+    width: 100%;
+  }
+}
 }
