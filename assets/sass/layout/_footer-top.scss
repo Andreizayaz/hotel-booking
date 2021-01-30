@@ -26,6 +26,16 @@
   @media(max-width:768px) {
     width:47%;
   }
+
+   @media(max-width:480px) {
+     width: 80%;
+     margin: 0 auto;
+     margin-bottom: 30px;
+
+     a{
+       text-align:center;
+     }
+   }
 }
 
 .information-section{
@@ -38,6 +48,13 @@
     @media(max-width:768px) {
       width: 47%;
       margin-bottom: 20px;
+    }
+
+    @media(max-width:480px) {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      text-align: center;
     }
   }
 
@@ -53,6 +70,13 @@
       width: 47%;
       margin-bottom: 20px;
     }
+
+    @media(max-width:480px) {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      text-align: center;
+    }
   }
 
   &:nth-child(4) {
@@ -61,6 +85,13 @@
     @media(max-width:768px) {
       width: 47%;
       margin-bottom: 20px;
+    }
+
+    @media(max-width:480px) {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      text-align: center;
     }
   }
 }

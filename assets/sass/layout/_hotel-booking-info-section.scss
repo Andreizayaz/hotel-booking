@@ -4,6 +4,10 @@
 .hotel-name-and-rate {
   @include flex-row-wrap-space-between-align-center;
   padding: 23px 0 26px;
+
+  @media(max-width:480px) {
+    flex-direction:column;
+  }
 }
 
 .stars-hotel-rate {
@@ -12,14 +16,30 @@
   width: 14%;
   margin-right: auto;
   margin-bottom: 4px;
+
+   @media(max-width:480px) {
+     margin:10px auto;
+   }
 }
 
 .header-and-offer{
   @include flex-row-wrap-space-between-align-center;
+
+  .label{
+    @media(max-width:480px) {
+      margin: 10px auto;
+      padding:10px;
+      font-size: 14px;
+    }
+  }
 }
 
 .header-section {
   margin-right: 14px;
+
+  @media(max-width:480px) {
+    margin: 10px auto;
+  }
 }
 
 .user-rating{
@@ -28,10 +48,18 @@
   text-align: center;
   background: $background-form-button;
   border-radius: 4px;
+
+  @media(max-width:480px) {
+    width:35%;
+  }
 }
 
 .rate-header{
   margin-bottom: 2px;
+
+  @media(max-width:480px) {
+    font-size: 14px;
+  }
 }
 .slider-booking-and-map {
   @include flex-row-wrap-space-between;

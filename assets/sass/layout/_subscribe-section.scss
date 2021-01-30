@@ -25,6 +25,11 @@
     padding: 45px 10px;
   }
 
+  @media(max-width:480px) {
+    width:95%;
+    padding:15px 0;
+  }
+
   .search-form{
     height:fit-content;
     margin: 0;
@@ -36,6 +41,12 @@
   @include flex-column;
   color: #FFF;
   text-align: left;
+
+  @media(max-width:480px) {
+    width:100%;
+    margin-bottom: 20px;
+   text-align:center;
+  }
 }
 
 .small-subscribe-text {

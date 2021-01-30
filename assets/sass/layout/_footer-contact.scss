@@ -21,6 +21,10 @@
 
   .information-header-block{
     margin-bottom: 27px;
+
+     @media(max-width:480px) {
+       text-align: center;
+     }
   }
 }
 
@@ -71,6 +75,10 @@
 
   .information-header-block{
     margin-bottom: 34px;
+
+    @media(max-width:480px) {
+      text-align:center;
+    }
   }
 
   .name-and-number{
@@ -79,10 +87,20 @@
 
     .search-input{
       width:47%;
+
+      @media(max-width:480px) {
+        width:100%;
+        margin-bottom: 15px;
+      }
     }
 
     .input-text{
       min-width:0;
+
+      @media(max-width:480px) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -124,6 +142,10 @@
 
     @media(max-width:1149px) {
       width:31%;
+    }
+
+    @media(max-width:480px) {
+      width: 35%;
     }
   }
 }

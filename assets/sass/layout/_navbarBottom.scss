@@ -3,6 +3,10 @@
 
 .navbarBottom{
   background-color: $bacgkround-navbar-bottom;
+
+  @media(max-width:768px) {
+    background-color:transparent;
+  }
 }
 
 .navigation{
