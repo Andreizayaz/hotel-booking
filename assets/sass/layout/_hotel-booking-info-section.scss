@@ -18,12 +18,17 @@
   margin-bottom: 4px;
 
    @media(max-width:480px) {
+     width:20%;
      margin:10px auto;
    }
 }
 
 .header-and-offer{
   @include flex-row-wrap-space-between-align-center;
+
+  @media(max-width:480px) {
+    flex-direction: column;
+  }
 
   .label{
     @media(max-width:480px) {
@@ -117,8 +122,13 @@
   border-radius: 8px;
 
   .button-primary{
-    @media(max-width:768px) {
+    @media(max-width:1024px) {
       width: 50%;
+      margin: 0 auto;
+    }
+
+    @media(max-width:768px) {
+      width: 35%;
       margin: 0 auto;
     }
   }
@@ -158,12 +168,46 @@
 .person-section {
   width: 28%;
   text-align: left;
+
+  @media(max-width:870px) {
+    width: 35%;
+  }
+
+  @media(max-width:768px) {
+    width: 13%;
+  }
+
+  @media(max-width:724px) {
+    width: 20%;
+  }
+
+  @media(max-width:550px) {
+    width: 30%;
+  }
+
+  @media(max-width:368px) {
+    width: 37%;
+  }
 }
 
 .user,
 .room {
   @include flex-row-wrap-space-between;
   align-items: flex-start;
+@media(max-width:1024px) {
+  width: 80%;
+}
+
+@media(max-width:768px) {
+  width: 100%;
+}
+@media(max-width:724px) {
+  justify-content: initial;
+
+  img{
+    margin-right:20px;
+  }
+}
 }
 
 .user {
@@ -183,6 +227,33 @@
   @include flex-row-wrap-space-between;
   width: 28%;
   text-align: right;
+@media(max-width:1024px) {
+  justify-content: flex-start;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+@media(max-width:870px) {
+  width: 35%;
+}
+
+@media(max-width:768px) {
+  width: 14%;
+}
+
+@media(max-width:724px) {
+  width: 20%;
+}
+
+@media(max-width:550px) {
+  width: 30%;
+}
+
+@media(max-width:368px) {
+  width: 37%;
+}
 }
 
 .text-phone-number {

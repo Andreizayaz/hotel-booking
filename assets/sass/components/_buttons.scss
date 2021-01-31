@@ -26,7 +26,7 @@ button{
   display:none;
   width:100px;
   padding:10px;
-  margin-bottom: 15px;
+  margin: 15px 0;
   font-family: $base-font;
   font-size: 16px;
   color:#FFF;
@@ -34,8 +34,4 @@ button{
   border-radius:8px;
   background-color:$bacgkround-navbar-bottom;
   opacity:.8;
-
-  @media(max-width:900px) {
-    display:block;
-  }
 }

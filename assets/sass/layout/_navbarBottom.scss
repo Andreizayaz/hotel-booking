@@ -7,6 +7,12 @@
   @media(max-width:768px) {
     background-color:transparent;
   }
+
+  .btn-burger-side-menu {
+    @media(max-width:768px) {
+      display: block;
+    }
+  }
 }
 
 .navigation{

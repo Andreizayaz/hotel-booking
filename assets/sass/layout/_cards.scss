@@ -7,6 +7,12 @@
   @media(max-width:1024px) {
     margin:50px 0 50px;
   }
+
+  .btn-burger-side-menu {
+    @media(max-width:900px) {
+      display: block;
+    }
+  }
 }
 
 .cards-menu-item{
@@ -205,6 +211,11 @@
     margin-bottom: 20px;
   }
 
+  @media(max-width:645px) {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
   &:last-child{
     @media(max-width:1024px) {
       margin-bottom: 0;
@@ -224,6 +235,27 @@
   .list-details-item{
     width:100%;
     margin-right:0;
+
+     @media(max-width:480px) {
+       padding-top:5px;
+       background-image: url(../assets/icons/06_PackageSummary/01_circle_check_full.svg);
+       background-repeat:no-repeat;
+     }
+
+    img{
+       @media(max-width:480px) {
+         display:none;
+       }
+    }
+
+    p.text{
+margin-left:25px;
+
+      @media(max-width:480px) {
+        width:80%;
+        word-wrap: break-word;
+      }
+    }
   }
 }
 .item-flex {

@@ -274,7 +274,7 @@ button {
   display: none;
   width: 100px;
   padding: 10px;
-  margin-bottom: 15px;
+  margin: 15px 0;
   font-family: Mulish, Arial, sans-serif;
   font-size: 16px;
   color: #FFF;
@@ -282,12 +282,6 @@ button {
   border-radius: 8px;
   background-color: #0A223D;
   opacity: .8;
-}
-
-@media (max-width: 900px) {
-  .btn-burger-side-menu {
-    display: block;
-  }
 }
 
 @font-face {
@@ -771,6 +765,12 @@ strong {
   }
 }
 
+@media (max-width: 768px) {
+  .navbarBottom .btn-burger-side-menu {
+    display: block;
+  }
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1003,6 +1003,7 @@ strong {
 
 @media (max-width: 480px) {
   .stars-hotel-rate {
+    width: 20%;
     margin: 10px auto;
   }
 }
@@ -1021,6 +1022,15 @@ strong {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  .header-and-offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1165,9 +1175,16 @@ strong {
   border-radius: 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .booking-info .button-primary {
     width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-info .button-primary {
+    width: 35%;
     margin: 0 auto;
   }
 }
@@ -1223,6 +1240,36 @@ strong {
   text-align: left;
 }
 
+@media (max-width: 870px) {
+  .person-section {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .person-section {
+    width: 13%;
+  }
+}
+
+@media (max-width: 724px) {
+  .person-section {
+    width: 20%;
+  }
+}
+
+@media (max-width: 550px) {
+  .person-section {
+    width: 30%;
+  }
+}
+
+@media (max-width: 368px) {
+  .person-section {
+    width: 37%;
+  }
+}
+
 .user,
 .room {
   display: -webkit-box;
@@ -1238,6 +1285,33 @@ strong {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .user,
+  .room {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .user,
+  .room {
+    width: 100%;
+  }
+}
+
+@media (max-width: 724px) {
+  .user,
+  .room {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+  .user img,
+  .room img {
+    margin-right: 20px;
+  }
 }
 
 .user {
@@ -1277,6 +1351,47 @@ strong {
   text-align: right;
 }
 
+@media (max-width: 1024px) {
+  .phone-number {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .phone-number img {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 870px) {
+  .phone-number {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .phone-number {
+    width: 14%;
+  }
+}
+
+@media (max-width: 724px) {
+  .phone-number {
+    width: 20%;
+  }
+}
+
+@media (max-width: 550px) {
+  .phone-number {
+    width: 30%;
+  }
+}
+
+@media (max-width: 368px) {
+  .phone-number {
+    width: 37%;
+  }
+}
+
 .text-phone-number {
   color: #FFF;
 }
@@ -1303,6 +1418,12 @@ strong {
 @media (max-width: 1024px) {
   .cards {
     margin: 50px 0 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cards .btn-burger-side-menu {
+    display: block;
   }
 }
 
@@ -1576,6 +1697,13 @@ strong {
   }
 }
 
+@media (max-width: 645px) {
+  .content-details-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 1024px) {
   .content-details-item:last-child {
     margin-bottom: 0;
@@ -1593,6 +1721,31 @@ strong {
 .list-details-colummn .list-details-item {
   width: 100%;
   margin-right: 0;
+}
+
+@media (max-width: 480px) {
+  .list-details-colummn .list-details-item {
+    padding-top: 5px;
+    background-image: url(../assets/icons/06_PackageSummary/01_circle_check_full.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-details-colummn .list-details-item img {
+    display: none;
+  }
+}
+
+.list-details-colummn .list-details-item p.text {
+  margin-left: 25px;
+}
+
+@media (max-width: 480px) {
+  .list-details-colummn .list-details-item p.text {
+    width: 80%;
+    word-wrap: break-word;
+  }
 }
 
 .item-flex {
@@ -1837,7 +1990,7 @@ strong {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  text-align: center;
+  text-align: left;
 }
 
 .information-content {
