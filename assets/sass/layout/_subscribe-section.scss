@@ -1,0 +1,66 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.subscribe-section {
+  background:url("../assets/img/05_SubscribeSection/01_Photo.png"),
+  #C4C4C4;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
+
+.subscribe-section-overlay {
+  background: rgba(10, 34, 61, 0.8);
+}
+
+.subscribe-section-content {
+  @include flex-row-wrap-space-between;
+  align-items: center;
+  padding: 98px 0 87px;
+  width: 66%;
+  margin: 0 auto;
+
+  @media(max-width:1024px) {
+    width: 80%;
+    padding: 45px 10px;
+  }
+
+  @media(max-width:480px) {
+    width:95%;
+    padding:15px 0;
+  }
+
+  .search-form{
+    height:fit-content;
+    margin: 0;
+    padding: 7px 0;
+  }
+}
+
+.subscribe-text {
+  @include flex-column;
+  color: #FFF;
+  text-align: left;
+
+  @media(max-width:480px) {
+    width:100%;
+    margin-bottom: 20px;
+   text-align:center;
+  }
+}
+
+.small-subscribe-text {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.subscribe-text span.main-header {
+  margin:0;
+  text-transform: uppercase;
+}
+
+.subscribe-button-text{
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFF;
+}

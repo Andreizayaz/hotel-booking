@@ -1,0 +1,135 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.footer-top{
+  @include flex-row-wrap-space-between;
+  margin-bottom: 84px;
+
+  @media(max-width:1024px) {
+    padding: 0 10px;
+  }
+
+  @media(max-width:768px) {
+    margin-bottom: 25px;
+  }
+}
+
+.footer-logo{
+  width:14%;
+  padding-top:31px;
+  margin-right:127px;
+
+  @media(max-width:1149px) {
+    margin-right: 25px;
+  }
+
+  @media(max-width:768px) {
+    width:47%;
+  }
+
+   @media(max-width:480px) {
+     width: 80%;
+     margin: 0 auto;
+     margin-bottom: 30px;
+
+     a{
+       text-align:center;
+     }
+   }
+}
+
+.information-section{
+  text-align: left;
+  //max-width: 27%;
+
+  &:nth-child(2){
+    width:14%;
+
+    @media(max-width:768px) {
+      width: 47%;
+      margin-bottom: 20px;
+    }
+
+    @media(max-width:480px) {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  &:nth-child(3) {
+    width: 26%;
+    margin: 0 52px 0 129px;
+
+    @media(max-width:1149px) {
+      margin: 0;
+    }
+
+    @media(max-width:768px) {
+      width: 47%;
+      margin-bottom: 20px;
+    }
+
+    @media(max-width:480px) {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  &:nth-child(4) {
+    width: 18%;
+
+    @media(max-width:768px) {
+      width: 47%;
+      margin-bottom: 20px;
+    }
+
+    @media(max-width:480px) {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+}
+
+.information-header-block{
+  margin-bottom: 17px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.social-network{
+  @include flex-row-wrap-space-between;
+  margin-top: 23px;
+}
+
+.header-social{
+  width:60%;
+  margin: 0;
+
+  @media(max-width:1024px) {
+    width:55%;
+  }
+}
+
+.social-network-list{
+  @include flex-row-wrap-space-between;
+  width:27%;
+
+  @media(max-width:1024px) {
+    width: 39%;
+  }
+}
+
+.social-network-item{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}

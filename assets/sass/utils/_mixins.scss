@@ -14,6 +14,11 @@
   flex-flow:row wrap;
 }
 
+@mixin flex-column {
+  display:flex;
+  flex-direction: column
+}
+
 @mixin flex-row-wrap-space-between-align-center {
   display: flex;
   flex-flow: row wrap;
@@ -21,6 +26,15 @@
   justify-content: space-between;
 }
 
-/*@mixin block-model($display:block, $width:fit-content, $margin) {
-  display:
-}*/
+@mixin flex-row-wrap-start-align-center {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flex-row-wrap-space-between {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

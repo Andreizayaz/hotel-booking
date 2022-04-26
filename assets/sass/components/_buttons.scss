@@ -1,8 +1,40 @@
 @import"../utils/variables";
 
+button{
+  cursor:pointer;
+}
+
+.button-primary{
+  padding:13px 0;
+  color:#FFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: $background-form-button;
+}
+
 .button-submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left:-65px;
   padding: 9px 22px;
   background-color: $background-form-button;
   border-radius: 0px 6px 6px 0px;
+}
+
+.btn-burger-side-menu{
+  display:none;
+  width:100px;
+  padding:10px;
+  margin: 15px 0;
+  font-family: $base-font;
+  font-size: 16px;
+  color:#FFF;
+  text-align:center;
+  border-radius:8px;
+  background-color:$bacgkround-navbar-bottom;
+  opacity:.8;
 }

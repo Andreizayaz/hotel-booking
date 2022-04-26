@@ -1,0 +1,35 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.breadcrumbs {
+  background-color: $background-gray;
+}
+
+.breadcrumbs-list {
+  @include flex-row-wrap-start-align-center;
+  padding: 18px 0;
+}
+
+.breadcrumb-item {
+  padding: 0 5px;
+  color: $gray-text;
+  transform: skew(-20deg);
+
+  &:first-child {
+    padding-left:0;
+  }
+
+  &:nth-child(2) {
+    border-right: 1px solid $gray-text;
+    border-left: 1px solid $gray-text;
+  }
+
+  &:last-child {
+    transform: none;
+  }
+
+  a {
+    display: block;
+    transform: skew(20deg);
+  }
+}
