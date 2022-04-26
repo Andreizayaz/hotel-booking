@@ -16,6 +16,9 @@ button{
 }
 
 .button-submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left:-65px;
   padding: 9px 22px;
   background-color: $background-form-button;
